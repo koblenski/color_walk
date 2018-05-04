@@ -1,0 +1,48 @@
+<div class="color_walk_game">
+  <div id="wrapper">
+    <div id="gameboard"></div>
+  </div>
+
+  <div id="control_container">
+    <p class="btn moves score">0</p>
+  </div>
+
+  <div id="solver_container">
+    <select id="solver_type">
+      <option value="round-robin">Round Robin</option>
+      <option value="round-robin-skip">Round Robin with Skipping</option>
+      <option value="random">Random Choice</option>
+      <option value="random-skip">Random Choice with Skipping</option>
+      <option value="greedy">Greedy</option>
+      <option value="greedy-look-ahead">Greedy Look Ahead</option>
+      <option value="max-perimeter">Max Perimeter</option>
+      <option value="max-perimeter-look-ahead">Max Perimeter Look Ahead</option>
+      <option value="perimeter-area">Perimeter-Area Hybrid</option>
+      <option value="perimeter-area-look-ahead">Perim-Area Hybrid Look Ahead</option>
+      <option value="deep-path">Deep Path</option>
+      <option value="deep-path-look-ahead">Deep Path Look Ahead</option>
+      <option value="path-area">Path-Area Hybrid</option>
+      <option value="path-area-look-ahead">Path-Area Hybrid Look Ahead</option>
+      <option value="bfs">BFS with Greedy Look Ahead</option>
+      <option value="dfs">DFS with Greedy Look Ahead</option>
+      <option value="dijkstra">Dijkstra's Algorithm</option>
+      <option value="greedy-dijkstra">Greedy-Dijkstra Hybrid</option>
+      <option value="dijkstra-greedy">Dijkstra-Greedy Hybrid</option>
+      <option value="dijkstra-dijkstra">Dijkstra-Dijkstra Hybrid</option>
+      <option value="max-perimeter-dijkstra">Max-Perimeter-Dijkstra Hybrid</option>
+    </select>
+    <input id="solver_max_moves" type="text" autocomplete="off" value="2">
+    Scale Factor: <input id="solver_scale_factor" type="text" autocomplete="off" value="25">
+    <p>
+      Iterations: <input id="solver_iterations" type="text" autocomplete="off" value="10">
+      <span id="solver_play" class="btn">&gt;</span>
+    </p>
+  </div>
+
+  <div id="solver_stats">
+    <p id="min">Min: </p>
+    <p id="mean">Mean: </p>
+    <p id="max">Max: </p>
+    <p id="stdev">Stdev: </p>
+  </div>
+</div>

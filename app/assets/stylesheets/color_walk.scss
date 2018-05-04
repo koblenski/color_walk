@@ -1,0 +1,86 @@
+body .color_walk_game {
+    $text_color: #0e274e;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $block_size: 20px;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+
+    #wrapper {
+    	position: relative;
+    	margin: auto;
+
+	    .block {
+	    	position: absolute;
+	    	height: $block_size;
+	    	width: $block_size;
+	    }
+    }
+
+    #control_container, #solver_container {
+    	margin-top: 20px;
+
+    	.control {
+    		display: inline-block;
+    		width: 60px;
+    		height: 60px;
+    		margin: 0 5px;
+
+    		&:active {
+	            background-color: #292c35;
+	            border-top: 1px solid #565B6E;
+	            border-bottom: none;
+	            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;
+	        }
+    	}
+
+      #solver_iterations, #solver_max_moves, #solver_scale_factor {
+        width: 30px;
+      }
+
+      #solver_play {
+        font-size: 18px;
+      }
+
+    	.moves {
+    		cursor: default;
+    		width: 120px;
+    		height: 60px;
+    		margin: 0 5px;
+    	}
+    }
+
+    #solver_container {
+      width: 250px;
+      float: left;
+      margin-left: 33%;
+    }
+
+    #solver_stats {
+      margin-top: 20px;
+      margin-left: 20px;
+      float: left;
+      text-align: left;
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #1f1f1f;
+        color: #FFF;
+        font-size: 50px;
+        padding: 0 10px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.2);;
+        border-radius: 3px;
+    }
+}
